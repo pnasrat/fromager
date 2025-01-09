@@ -1,0 +1,14 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 26ecfa4ed..4cd45f198 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -9,6 +9,9 @@ members = [
+     "src/rust/cryptography-x509",
+     "src/rust/cryptography-x509-verification",
+ ]
++excludes = [
++    "docs/development/",
++]
+ 
+ [workspace.package]
+ version = "0.1.0"

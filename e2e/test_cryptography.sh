@@ -15,6 +15,7 @@ fromager \
     --sdists-repo="$OUTDIR/sdists-repo" \
     --wheels-repo="$OUTDIR/wheels-repo" \
     --work-dir="$OUTDIR/work-dir" \
+    --patches-dir "$SCRIPTDIR/${DIST}_patches" \
     bootstrap "${DIST}==${VERSION}"
 
 EXPECTED_FILES="
